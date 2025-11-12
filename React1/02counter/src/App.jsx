@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
 function App() {
   //  let count=5;
   // function setCount(newCount) {
@@ -28,16 +25,26 @@ function App() {
     }
   }
 
+  // return (
+  //   <>
+  //     <h1>My counter</h1>
+  //     <p>Count is: {count}</p>
+  //    { /* <button onClick={() => setCount(count + 1)}>Increment</button>
+  //     <button onClick={() => setCount(count - 1)}>Decrement</button> */ }
+  //     <button onClick={increment}>Increment</button>
+  //     <button onClick={decrement}>Decrement</button>
+  //   </>
+  // )
   return (
-    <>
-      <h1>My counter</h1>
+    <div className="container">
+      <h1>My Counter</h1>
       <p>Count is: {count}</p>
-     { /* <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(count - 1)}>Decrement</button> */ }
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-    </>
-  )
+      <div className="btn-group">
+        <button onClick={decrement} className="btn dec">Decrement</button>
+        <button onClick={increment} className="btn inc">Increment</button>
+      </div>
+    </div>
+  );
 }
 
 export default App

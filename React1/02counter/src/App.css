@@ -1,0 +1,67 @@
+/* Basic Page Styling */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Counter Container */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* Heading and Text */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+/* Button Styling */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  border: none;
+  padding: 12px 22px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Specific Button Colors */
+.btn.inc {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.dec {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hover Effects */
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
