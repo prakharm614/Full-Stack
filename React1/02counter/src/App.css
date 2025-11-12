@@ -17,6 +17,7 @@ body {
   padding: 40px 60px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
